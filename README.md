@@ -9,7 +9,7 @@
 
 - Now I can resample the data by using the oversampling algorithms (naive random oversampling and SMOTE) to determine which algorithm results in the best performance. Then, I used the undersampling algorithm cluster centroids to resample the data to also determine which algorithm results in the best performance compared to the oversampling algorithms. 
 
-- For each resampling algorithm first needed to resample the data using the correct algorithm type (for example, SMOTE for oversampling). Then I used the Logicistic Regression model using the resampled data to make predicitions and evaluate the model's performance. I also calculated the accuracy score, generated a confusion matrix, and printed out the imbalanced classification report. See Image 1 of the undersampling algorithm. 
+- For each resampling algorithm first needed to resample the data using the correct algorithm type (for example, SMOTE for oversampling). Then I used the Logicistic Regression model using the resampled data to make predicitions and evaluate the model's performance. I also calculated the accuracy score, generated a confusion matrix, and printed out the imbalanced classification report. See Image 1 of the undersampling algorithm. The script can be found by going to [credit risk resampling](https://github.com/mrma2318/Credit_Risk_Analysis/blob/0ec98ebfd633c7a89b07de90b9255b451f8a2f98/Starter_Code/credit_risk_resampling.ipynb).
 
 #### Image 1: Undersampling Algorithm
 ![Undersampling Algorithm](https://github.com/mrma2318/Credit_Risk_Analysis/blob/4c91ebadcdafa788a68adfc572d3abaa9d50da06/images/undersampling.png)
@@ -17,7 +17,7 @@
 ### SMOTEENN Algorithm to Predict Credit Risk
 - In addition to oversampling and undersampling algorithms, there is also combination (over and under) sampling algorihtm, SMOTEENN. For the SMOTEENN algorithm, I used a combinatorial approach of the over and undersampling to determine if the results from the combinatorial approach are better at predicting credit risk than the resampling algorithms. 
 
-- After the data was resampled using SMOTEENN, I used the Logistic Regression classifier again to make predictions and evaluate the model's performance. Then I calculated the accuracy score of the model, generated a confusion matrix, and printed out the imbalanced classification report, Image 2.
+- After the data was resampled using SMOTEENN, I used the Logistic Regression classifier again to make predictions and evaluate the model's performance. Then I calculated the accuracy score of the model, generated a confusion matrix, and printed out the imbalanced classification report, Image 2. The script can be found by going to [credit risk resampling](https://github.com/mrma2318/Credit_Risk_Analysis/blob/0ec98ebfd633c7a89b07de90b9255b451f8a2f98/Starter_Code/credit_risk_resampling.ipynb).
 
 #### Image 2: SMOTEENN Algorithm
 ![SMOTEENN Algorithm](https://github.com/mrma2318/Credit_Risk_Analysis/blob/4c91ebadcdafa788a68adfc572d3abaa9d50da06/images/SMOTEENN.png)
@@ -25,12 +25,12 @@
 ### Ensemble Classifiers to Predict Credit Risk
 - Lastly, I compared two ensemble algorithms (Balanced Random Forest Classifer and Easy Ensemble Classifer), to determine which algorithm results in the best performance. Once again, after uploading the data and reading it into a DataFrame, I needed to create the training variables. I did this by converting the string values into numberical ones using the get_dummies() method. Then I needed to create my target variables and balance them before I could split the data into training and testing data. 
 
-- For the ensemble classifiers, I used the balanced random forest classifer first. I resampled the training data by using the BalancedRandomForestClassifier algorithm with 100 estimators. Then I calculated the accuracy score of the model, generated the confusion matrix, and printed out the imbalanced classification report, Image 3. I also printed the feature importance, sorted in descending order, with the feature score. 
+- For the ensemble classifiers, I used the balanced random forest classifer first. I resampled the training data by using the BalancedRandomForestClassifier algorithm with 100 estimators. Then I calculated the accuracy score of the model, generated the confusion matrix, and printed out the imbalanced classification report, Image 3. I also printed the feature importance, sorted in descending order, with the feature score. The script can be found by going to [credit risk ensemble](https://github.com/mrma2318/Credit_Risk_Analysis/blob/0ec98ebfd633c7a89b07de90b9255b451f8a2f98/Starter_Code/credit_risk_ensemble.ipynb).
 
 #### Image 3: Balanced Random Forest Classifer
 ![Balanced Random Forest Classifer](https://github.com/mrma2318/Credit_Risk_Analysis/blob/4c91ebadcdafa788a68adfc572d3abaa9d50da06/images/balanced_classifier.png)
 
-- Then I resampled the training data using the EasyEnsembleClassifier algorithm with 100 estimators as well. Just like for the BalancedRandomForestClassifier algorithm, I calculated the accuracy score of the model, generated the confusion matrix, and printed out the imbalanced classification report, Image 4.
+- Then I resampled the training data using the EasyEnsembleClassifier algorithm with 100 estimators as well. Just like for the BalancedRandomForestClassifier algorithm, I calculated the accuracy score of the model, generated the confusion matrix, and printed out the imbalanced classification report, Image 4. The script can be found by going to [credit risk ensemble](https://github.com/mrma2318/Credit_Risk_Analysis/blob/0ec98ebfd633c7a89b07de90b9255b451f8a2f98/Starter_Code/credit_risk_ensemble.ipynb).
 
 #### Image 4: Easy Ensemble AdaBoost Classifer
 ![Easy Ensemble AdaBoost Classifer](https://github.com/mrma2318/Credit_Risk_Analysis/blob/4c91ebadcdafa788a68adfc572d3abaa9d50da06/images/adaboost_classifier.png)
