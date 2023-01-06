@@ -11,7 +11,7 @@
 
 - For each resampling algorithm first needed to resample the data using the correct algorithm type (for example, SMOTE for oversampling). Then I used the Logicistic Regression model using the resampled data to make predicitions and evaluate the model's performance. I also calculated the accuracy score, generated a confusion matrix, and printed out the imbalanced classification report. See Image 1 of the undersampling algorithm. 
 
-### Image 1: Undersampling Algorithm
+#### Image 1: Undersampling Algorithm
 ![Undersampling Algorithm](https://github.com/mrma2318/Credit_Risk_Analysis/blob/4c91ebadcdafa788a68adfc572d3abaa9d50da06/images/undersampling.png)
 
 ### SMOTEENN Algorithm to Predict Credit Risk
@@ -19,7 +19,7 @@
 
 - After the data was resampled using SMOTEENN, I used the Logistic Regression classifier again to make predictions and evaluate the model's performance. Then I calculated the accuracy score of the model, generated a confusion matrix, and printed out the imbalanced classification report, Image 2.
 
-### Image 2: SMOTEENN Algorithm
+#### Image 2: SMOTEENN Algorithm
 ![SMOTEENN Algorithm](https://github.com/mrma2318/Credit_Risk_Analysis/blob/4c91ebadcdafa788a68adfc572d3abaa9d50da06/images/SMOTEENN.png)
 
 ### Ensemble Classifiers to Predict Credit Risk
@@ -27,12 +27,12 @@
 
 - For the ensemble classifiers, I used the balanced random forest classifer first. I resampled the training data by using the BalancedRandomForestClassifier algorithm with 100 estimators. Then I calculated the accuracy score of the model, generated the confusion matrix, and printed out the imbalanced classification report, Image 3. I also printed the feature importance, sorted in descending order, with the feature score. 
 
-### Image 3: Balanced Random Forest Classifer
+#### Image 3: Balanced Random Forest Classifer
 ![Balanced Random Forest Classifer](https://github.com/mrma2318/Credit_Risk_Analysis/blob/4c91ebadcdafa788a68adfc572d3abaa9d50da06/images/balanced_classifier.png)
 
 - Then I resampled the training data using the EasyEnsembleClassifier algorithm with 100 estimators as well. Just like for the BalancedRandomForestClassifier algorithm, I calculated the accuracy score of the model, generated the confusion matrix, and printed out the imbalanced classification report, Image 4.
 
-### Image 4: Easy Ensemble AdaBoost Classifer
+#### Image 4: Easy Ensemble AdaBoost Classifer
 ![Easy Ensemble AdaBoost Classifer](https://github.com/mrma2318/Credit_Risk_Analysis/blob/4c91ebadcdafa788a68adfc572d3abaa9d50da06/images/adaboost_classifier.png)
 
 ## Results
